@@ -40,13 +40,16 @@
 ### Step 14: 
   Stop
 # Program:
+
 #include <stdio.h>
+
 void validateDate();
 int main()
 {
     validateDate();
     return 0;
 }
+
 void validateDate()
 {
     int dd, mm, yy;
@@ -106,7 +109,6 @@ Thus, the program was implemented and executed successfully, and the required ou
 # IAPR-4- Module 4 - FoC
 # Ex.No:17
   Develop a C program to read two numbers from the user and determine the maximum and minimum values. Use user-defined functions with arguments and return values—one function to find the maximum (max()) and another to find the minimum (min()).
-# Date : 
 # Aim:
  To develop a C program that uses functions with parameters and return values to compute and display the maximum and minimum of two user-entered numbers.
 # Algorithm:
@@ -145,7 +147,9 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 13: 
   Stop
 # Program:
+
 #include <stdio.h>
+
 int max(int a, int b)
 {
     if (a > b)
@@ -161,6 +165,7 @@ int min(int a, int b)
     else
         return a;
 }
+
 int main()
 {
     int num1, num2, maximum, minimum;
@@ -226,8 +231,11 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 11: 
  Stop
 # Program:
+
 #include <stdio.h>
+
 float celtof();
+
 float ftocel();
 
 int main()
@@ -240,6 +248,7 @@ int main()
     printf("Temperature in Celsius: %.2f\n", C);
     return 0;
 }
+
 float celtof()
 {
     float C, F;
@@ -248,6 +257,7 @@ float celtof()
     F = (C * 9 / 5) + 32;
     return F;
 }
+
 float ftocel()
 {
     float f, celsius;
@@ -306,9 +316,13 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7: 
   Stop
 # Program:
+
 #include <stdio.h>
+
 #define R 4
+
 #define C 4
+
 void spiralPrint(int m, int n, int a[R][C])
 {
     int i, k = 0, l = 0;
@@ -390,9 +404,13 @@ To build a C program to convert a string as described above, using a user-define
 ### Step 6: 
  Stop
 # Program:
+
 #include <stdio.h>
+
 #include <ctype.h>
+
 #include <string.h>
+
 void convertFirstCLastC(char str[])
 {
     int len = strlen(str);
@@ -411,6 +429,7 @@ void convertFirstCLastC(char str[])
     if (len > 1)
         str[len - 1] = toupper(str[len - 1]);
 }
+
 int main()
 {
     char str[100];
